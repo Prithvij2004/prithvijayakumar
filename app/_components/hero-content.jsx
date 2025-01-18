@@ -1,15 +1,16 @@
 export function HeroContent() {
-    return (
+  return (
       <div className="mb-12 max-w-md">
         <p className="whitespace-pre-line mb-8">
-          {`there are only two types 
-          of people after war,
-          winners and warriors.`}
+          self proclaimed <strong className="italic">product developer</strong>.
+        </p>
+        <p className="whitespace-pre-line mb-8">
+          currently placed at <strong className="italic underline"><a href="https://www.ust.com/" target="_blank" rel="noopener noreferrer">UST Global</a></strong>.
         </p>
         <p className="whitespace-pre-line">
-          {`i'm a warrior who
-  looks forward to win the
-  world.`}
+          {`building products, 
+          earning money(currently none), 
+          helping people and having fun.`}
         </p>
       </div>
     )

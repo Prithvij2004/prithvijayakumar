@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`min-h-screen bg-[#FFF5EB] ${jetbrainsmono.className}`}
+        className={`min-h-screen flex flex-col bg-[#FFF5EB] ${jetbrainsmono.className}`}
       >
         {children}
       </body>

@@ -1,27 +1,26 @@
-"use client"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Button } from "@/components/ui/button"
+"use server";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-export default function Header() {
+export default async function Header() {
   return (
-    <header className="flex justify-between items-center p-6">
-      <div className="flex-l">
+    <header className="flex justify-between items-center p-6 max-w-4xl mx-auto gap-x-72">
+      <div className="flex-1">
         <Avatar className="w-12 h-12">
-          <AvatarImage src="/avatar_pixel.png" alt="avatar"/>
+          <AvatarImage src="/avatar_pixel.png" alt="avatar" />
           <AvatarFallback>Prithvi J</AvatarFallback>
         </Avatar>
       </div>
-      <div className="flex-l text-center">
-        <span className="text-lg">Welcome</span>
+      <div className="flex-1 text-center">
+        <span className="text-lg font-bold">Welcome</span>
       </div>
       <div className="flex-1 flex justify-end">
-        <Button 
-          variant="outline" 
-          className="bg-[#C4B3A3] hover:bg-[#B3A292] text-black border-0"
+        <a
+          href="mailto:prithvijayakumardev@gmail.com"
+          className="font-bold text-[#8d7054] underline hover:text-[#684423] whitespace-nowrap"
         >
-          Hire Me
-        </Button>
+          email me
+        </a>
       </div>
     </header>
-  )
+  );
 }

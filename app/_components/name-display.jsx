@@ -1,7 +1,8 @@
+
 export function NameDisplay() {
     return (
       <div className="text-right">
-        <h1 className="text-3xl italic">
+        <h1 className="text-3xl italic font-bold">
           Prithvi
           <br />
           Jayakumar
