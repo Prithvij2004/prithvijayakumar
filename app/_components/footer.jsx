@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-      <footer className="mt-20 py-6 border-t border-gray-300">
+      <footer className="mt-40 py-6 border-t border-gray-300">
         <div className="max-w-4xl mx-auto px-6 flex justify-center space-x-8">
           <a href="https://x.com/prithvii_J" className="text-gray-600 hover:text-black underline">
             Twitter
